@@ -4,7 +4,7 @@
             "outputFile": "com.jungiantarot.app-mergeDebugResources-2:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jegom\\.gradle\\caches\\transforms-4\\ce3b6c57c5cc727c927976729502d316\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/jules/.gradle/caches/8.8/transforms/d786a1ea8859b72390204d0816c99bd0/transformed/core-1.12.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
