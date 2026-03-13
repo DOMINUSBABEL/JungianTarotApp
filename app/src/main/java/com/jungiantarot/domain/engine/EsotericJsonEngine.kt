@@ -38,9 +38,12 @@ class EsotericJsonEngine {
         "Canaliza el estrés a través del movimiento físico o la expresión creativa."
     )
 
+    private val dateFormat = SimpleDateFormat("dd 'de' MMMM, yyyy", Locale("es", "ES"))
+
     fun generateHoroscope(signo: String): HoroscopeData {
-        val dateFormat = SimpleDateFormat("dd 'de' MMMM, yyyy", Locale("es", "ES"))
-        val currentDate = dateFormat.format(Date())
+        val currentDate = synchronized(dateFormat) {
+            dateFormat.format(Date())
+        }
 
         return HoroscopeData(
             signo = signo,
