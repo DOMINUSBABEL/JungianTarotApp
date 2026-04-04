@@ -90,7 +90,7 @@ fun BirthChartScreen() {
             Button(
                 onClick = { 
                     // Mock data para el MVP
-                    chartData = engine.generateAstrologyChart("Leo", "Escorpio", "Acuario") 
+                    chartData = engine.calculateAstrologyChart(fecha, hora, lugar)
                 },
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6200EA)),
                 modifier = Modifier.fillMaxWidth()
